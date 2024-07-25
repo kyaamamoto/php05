@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF8C00;
+}
+
+main {
+    padding: 20px;
+}
+
+.dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #FF8C00;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.status {
+    margin-top: 20px;
+}
+
+.status h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #FF8C00;
+}
+
+.status p, .status ul {
+    margin: 5px 0;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #FF8C00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover {
+    background-color: #FF7043;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.hero-content .matching-btn {
+    padding: 10px 20px;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.hero-content .matching-btn a {
+    color: white;
+    text-decoration: none;
+}
+.hero-content .matching-btn:hover {
+    background-color: #cc8400;
+}

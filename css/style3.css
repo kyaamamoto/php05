@@ -1,0 +1,8 @@
+.btn-small {
+    padding: 4px 8px; /* ボタンの内側の余白を設定 */
+    font-size: 14px;  /* 文字サイズを設定 */
+    line-height: 1.5; /* 行の高さを設定 */
+    border-radius: 30px; /* 角を丸くする */
+    width: 100px;
+    height: 30px;
+}

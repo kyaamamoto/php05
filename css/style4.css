@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* 相対位置指定を追加 */
+}
+
+.login-container img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.login-container h1 {
+    margin: 20px 0;
+}
+
+.login-container .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-container .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0c344e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-container .btn:hover {
+    background-color: #0c344e;
+}
+
+.login-container .btn-register {
+    margin-top: 10px;
+}
+
+.login-container .btn-register a {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-container .btn-register a:hover {
+    background-color: #5a6268;
+}
+
+.message, .error {
+    display: block;
+    text-align: center;
+    width: 100%;
+}

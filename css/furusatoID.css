@@ -1,0 +1,276 @@
+/* 基本設定 */
+body {
+    font-family: 'Hiragino Kaku Gothic Pro', 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+    background-color: #FFA500; /* オレンジ色 */
+    padding: 20px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav {
+    position: relative;
+}
+
+nav .menu-toggle {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav .login-btn {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .login-btn:hover {
+    background-color: #0000009b;
+    color: white;
+}
+
+/* レスポンシブメニュー */
+nav .menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #FFA500; /* オレンジ色 */
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        display: block;
+    }
+
+    nav .menu-toggle {
+        display: block;
+    }
+
+    nav input[type="checkbox"] {
+        display: none;
+    }
+
+    nav input[type="checkbox"]:checked + ul {
+        display: flex;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+}
+
+/* ヒーローセクション */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://zouuu.sakura.ne.jp/zouuu/img/23496067_m.jpg') no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* 半透明の黒いオーバーレイ */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1, .hero-content p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* テキストのシャドウ */
+}
+
+/* セクション */
+.section {
+    padding: 60px 20px;
+    text-align: left; /* 左寄せ */
+}
+
+.section .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+#service {
+    background-color: #fff; /* 白色 */
+}
+
+#contact {
+    background-color: #FFA500; /* オレンジ色 */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center; /* 真ん中寄せ */
+}
+
+#contact h2 {
+    margin: 0 0 50px 0;
+}
+
+#contact .form-list {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none; /* リストスタイルを削除 */
+    text-align: center; /* 全体を中央揃え */
+}
+
+#contact .form-list div {
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    align-items: flex-start; /* テキストエリアの左端とラベルの文字の左端が揃うように */
+    margin-bottom: 20px;
+}
+
+#contact .form-list dl {
+    display: flex;
+    justify-content: flex-start; /* 左寄せ */
+    width: 100%;
+    max-width: 700px;
+}
+
+#contact .form-list dt {
+    width: 30%;
+    text-align: left; /* 左寄せ */
+}
+
+#contact .form-list dd {
+    width: 66%;
+}
+
+#contact .form-list input[type='text'],
+#contact .form-list input[type='email'],
+#contact .form-list textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+#contact .form-list textarea {
+    height: 200px;
+}
+
+#contact .submit-btn {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+#contact input[type='submit'] {
+    border: 2px solid #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+#contact input[type='submit']:hover {
+    background: #fff;
+    color: #FFA500;
+}
+
+@media screen and (max-width: 768px) {
+    #contact .form-list dl {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #contact .form-list dt,
+    #contact .form-list dd {
+        width: 100%;
+        text-align: left; /* 左寄せ */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+span {
+    color: #FFA500;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自治体マッチング</title>
+      <!-- ファビコン -->
+   <link rel="icon" type="image/png" href="https://zouuu.sakura.ne.jp/zouuu/img/IDfavicon.ico">
+    <link rel="stylesheet" href="./css/matching.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="top">
+        <div style="text-align: center;"><img src="https://zouuu.sakura.ne.jp/zouuu/img/fIDLogo.png"></div>
+        <h1>自治体マッチング</h1>
+    </div>
+
+    <form id="match-form">
+        <div class="checkbox-group">
+            <label>エリア:</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="area" value="hokkaido"> 北海道</label>
+                <label><input type="checkbox" name="area" value="tohoku"> 東北</label>
+                <label><input type="checkbox" name="area" value="kanto"> 関東</label>
+                <label><input type="checkbox" name="area" value="chubu"> 中部</label>
+                <label><input type="checkbox" name="area" value="kinki"> 近畿</label>
+                <label><input type="checkbox" name="area" value="chugoku"> 中国</label>
+                <label><input type="checkbox" name="area" value="shikoku"> 四国</label>
+                <label><input type="checkbox" name="area" value="kyushu"> 九州</label>
+                <label><input type="checkbox" name="area" value="okinawa"> 沖縄</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <label>自然環境:</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="nature" value="mountain"> 山</label>
+                <label><input type="checkbox" name="nature" value="sea"> 海</label>
+                <label><input type="checkbox" name="nature" value="river"> 川</label>
+                <label><input type="checkbox" name="nature" value="waterfall"> 滝</label>
+                <label><input type="checkbox" name="nature" value="forest"> 森林</label>
+                <label><input type="checkbox" name="nature" value="other"> その他</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <label>特産品:</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="products" value="fruit"> 果物</label>
+                <label><input type="checkbox" name="products" value="vegetables"> 野菜</label>
+                <label><input type="checkbox" name="products" value="rice"> お米</label>
+                <label><input type="checkbox" name="products" value="seafood"> 魚介類</label>
+                <label><input type="checkbox" name="products" value="meat"> 肉類</label>
+                <label><input type="checkbox" name="products" value="crafts"> 工芸品</label>
+                <label><input type="checkbox" name="products" value="sake"> 地酒</label>
+                <label><input type="checkbox" name="products" value="sweets"> お菓子</label>
+                <label><input type="checkbox" name="products" value="other"> その他</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <label>文化・歴史:</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="culture" value="festival"> 伝統的な祭り</label>
+                <label><input type="checkbox" name="culture" value="historical_buildings"> 歴史的建造物</label>
+                <label><input type="checkbox" name="culture" value="cultural_heritage"> 文化遺産</label>
+                <label><input type="checkbox" name="culture" value="traditional_crafts"> 地域の伝統工芸</label>
+                <label><input type="checkbox" name="culture" value="historic_sites"> 史跡</label>
+                <label><input type="checkbox" name="culture" value="other"> その他</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <label>観光名所:</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="tourism" value="famous_spots"> 有名な観光スポット</label>
+                <label><input type="checkbox" name="tourism" value="activities"> アクティビティ</label>
+                <label><input type="checkbox" name="tourism" value="theme_parks"> テーマパーク</label>
+                <label><input type="checkbox" name="tourism" value="museums"> 博物館・美術館</label>
+                <label><input type="checkbox" name="tourism" value="natural_parks"> 自然公園</label>
+                <label><input type="checkbox" name="tourism" value="other"> その他</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <label>アクセス:</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="access" value="airport"> 空港が近い</label>
+                <label><input type="checkbox" name="access" value="shinkansen"> 新幹線の駅が近い</label>
+                <label><input type="checkbox" name="access" value="distance"> 主要都市からの距離が近い</label>
+                <label><input type="checkbox" name="access" value="distance2"> 主要都市からの距離が遠い</label>
+                <label><input type="checkbox" name="access" value="public_transport"> 交通の便（公共交通機関の充実度）</label>
+                <label><input type="checkbox" name="access" value="other"> その他</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <label>趣味:</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="hobbies" value="fishing"> 釣り</label>
+                <label><input type="checkbox" name="hobbies" value="surfing"> サーフィン</label>
+                <label><input type="checkbox" name="hobbies" value="scuba_diving"> スキューバダイビング</label>
+                <label><input type="checkbox" name="hobbies" value="skiing"> スキー</label>
+                <label><input type="checkbox" name="hobbies" value="climbing"> 登山</label>
+                <label><input type="checkbox" name="hobbies" value="camping"> キャンプ</label>
+                <label><input type="checkbox" name="hobbies" value="golf"> ゴルフ</label>
+                <label><input type="checkbox" name="hobbies" value="cycling"> サイクリング</label>
+                <label><input type="checkbox" name="hobbies" value="marathon"> マラソン</label>
+                <label><input type="checkbox" name="hobbies" value="sauna"> 温泉・サウナ</label>
+                <label><input type="checkbox" name="hobbies" value="Cafe_tour"> カフェ巡り</label> 
+                <label><input type="checkbox" name="hobbies" value="other"> その他</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <label>コミュニティ・生活環境:</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="community" value="events"> 地域のイベント</label>
+                <label><input type="checkbox" name="community" value="community_activities"> コミュニティ活動</label>
+                <label><input type="checkbox" name="community" value="environmental_efforts"> 環境にやさしい取り組み</label>
+                <label><input type="checkbox" name="community" value="safety"> 治安の良さ</label>
+                <label><input type="checkbox" name="community" value="friendly_residents"> 住民のフレンドリーさ</label>
+                <label><input type="checkbox" name="community" value="other"> その他</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <label>その他の特徴:</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="other_features" value="outdoor_activities"> アウトドアアクティビティが豊富</label>
+                <label><input type="checkbox" name="other_features" value="pet_friendly"> ペットに優しい環境</label>
+                <label><input type="checkbox" name="other_features" value="cultural_exchange"> 文化交流の機会</label>
+                <label><input type="checkbox" name="other_features" value="local_food"> ローカルフードの充実</label>
+                <label><input type="checkbox" name="other_features" value="environmental_protection"> 環境保護の取り組み</label>
+                <label><input type="checkbox" name="other_features" value="primary_industry"> 農林水産業への取り組み</label>
+                <label><input type="checkbox" name="other_features" value="migration_support"> 移住支援制度</label>
+                <label><input type="checkbox" name="other_features" value="childcare_support"> 子育て支援</label>
+                <label><input type="checkbox" name="other_features" value="education_facilities"> 教育施設（学校、塾など）</label>
+                <label><input type="checkbox" name="other_features" value="commercial_facilities"> 商業施設の充実</label>
+                <label><input type="checkbox" name="other_features" value="bousai"> 災害に強い</label>
+                <label><input type="checkbox" name="other_features" value="other"> その他</label>
+            </div>
+    
+
+        </div>
+
+        <button type="submit">検索</button>
+    </form>
+
+    <form>
+    <div id="results"> </div>
+
+    <button type="button" id="clear-button">条件クリア</button>
+    <a href="holder.php"><button type="button">戻る</button></a>
+    </form>
+   
+
+    <script>
+            // 条件クリアボタンのクリックイベントを追加
+            document.getElementById('clear-button').addEventListener('click', function() {
+            // 全てのチェックボックスを未選択にする
+            document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
+                checkbox.checked = false;
+            });
+
+            // 検索結果を消す
+            document.getElementById('results').innerHTML = '';
+        });
+
+        // フォームが送信されたときのイベントリスナーを追加
+        document.getElementById('match-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // 各条件のチェックボックスの値を取得
+            let area = Array.from(document.querySelectorAll('input[name="area"]:checked')).map(cb => cb.value);
+            let nature = Array.from(document.querySelectorAll('input[name="nature"]:checked')).map(cb => cb.value);
+            let products = Array.from(document.querySelectorAll('input[name="products"]:checked')).map(cb => cb.value);
+            let culture = Array.from(document.querySelectorAll('input[name="culture"]:checked')).map(cb => cb.value);
+            let tourism = Array.from(document.querySelectorAll('input[name="tourism"]:checked')).map(cb => cb.value);
+            let access = Array.from(document.querySelectorAll('input[name="access"]:checked')).map(cb => cb.value);
+            let hobbies = Array.from(document.querySelectorAll('input[name="hobbies"]:checked')).map(cb => cb.value);
+            let community = Array.from(document.querySelectorAll('input[name="community"]:checked')).map(cb => cb.value);
+            let otherFeatures = Array.from(document.querySelectorAll('input[name="other_features"]:checked')).map(cb => cb.value);
+
+        // リクエストデータとしてまとめる
+        let requestData = {
+            area: area,
+            nature: nature,
+            products: products,
+            culture: culture,
+            tourism: tourism,
+            access: access,
+            hobbies: hobbies,
+            community: community,
+            other_features: otherFeatures,
+        };
+
+        let prompt = `
+        あなたは日本全国の自治体を知り尽くした専門家です。
+        北は北海道から南は九州沖縄まで日本全ての自治体の特徴を知り尽くしています。
+        自治体の特徴を知り尽くしたプロフェッショナルとして以下の質問に答えてください。
+        日本全国の自治体のうち、次に提示される条件に対して最も合致率の高い市区町村を推察し、
+        下記の書式に従って結果を表示させてください。
+        なお、選択フラグにある空港が近いはおおよそ5km圏内、新幹線の駅が近いはおおよそ2km圏内、主要都市からの距離が近いは100km圏内としてください。
+        主要都市は、政令都市を指します。
+        表示する自治体は政令都市の優先順位を下げ、人口の少ない地域を提案してください。
+        ・自治体名：
+        自治体名は都道府県市区町村の順に記載してください。
+        ・マッチ度：%で表示
+        ・理由：
+        :\n\n`;
+        prompt += `エリア: ${requestData.area.join(', ')}\n`;
+        prompt += `自然環境: ${requestData.nature.join(', ')}\n`;
+        prompt += `特産品: ${requestData.products.join(', ')}\n`;
+        prompt += `文化・歴史: ${requestData.culture.join(', ')}\n`;
+        prompt += `観光名所: ${requestData.tourism.join(', ')}\n`;
+        prompt += `アクセス: ${requestData.access.join(', ')}\n`;
+        prompt += `趣味: ${requestData.hobbies.join(', ')}\n`;
+        prompt += `コミュニティ・生活環境: ${requestData.community.join(', ')}\n`;
+        prompt += `その他の特徴: ${requestData.other_features.join(', ')}\n`;
+        prompt += `その他希望条件: ${requestData.keywords}\n`;
+
+        fetch('https://api.openai.com/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': ''  // ここにAPIキーを入れます
+            },
+            body: JSON.stringify({
+                model: "gpt-3.5-turbo",
+                messages: [{"role": "user", "content": prompt}],
+                max_tokens: 1000
+            })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            displayResults(data.choices[0].message.content);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('results').innerHTML = 'エラーが発生しました。後で再度お試しください。';
+        });
+        });
+
+        function displayResults(result) {
+        let resultsContainer = document.getElementById('results');
+        resultsContainer.innerHTML = '';
+
+        if (!result) {
+            resultsContainer.innerHTML = '一致する自治体が見つかりませんでした。';
+            return;
+        }
+
+        let div = document.createElement('div');
+        div.innerHTML = `<p>${result}</p>`;
+        resultsContainer.appendChild(div);
+        }
+        </script>
+
+</body>
+</html>
